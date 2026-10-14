@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 router.get('/main_page', function (req, res, next) {
     res.render('brp', {
         title: "Description",
-        picture: "images/template.png",
+        picture: "/images/template.png",
         desc: "Тут должно быть описание, но оно будет создано позже"
     });
 });
@@ -17,7 +17,7 @@ router.get('/main_page', function (req, res, next) {
 router.get('/download_page', function (req, res, next) {
     res.render('brp', {
         title: "Download",
-        picture: "images/icon.png",
+        picture: "/images/icon.png",
         desc: "Тут должно быть описание, но оно будет создано позже"
     });
 });
