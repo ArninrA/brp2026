@@ -1,5 +1,8 @@
 const { MongoClient } = require('mongodb');
 
+var data = require("./data.js").data;
+console.log(data);
+
 // Connection URL
 const url = 'mongodb://localhost:27017';
 const client = new MongoClient(url);
@@ -25,3 +28,4 @@ main()
     .then(console.log)
     .catch(console.error)
     .finally(() => client.close());
+
